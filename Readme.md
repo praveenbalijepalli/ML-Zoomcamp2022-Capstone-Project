@@ -50,7 +50,7 @@ Precision               : Train - 1.0000 ,  Val - 0.8482 ,  Test - 0.9138
 Recall                  : Train - 1.0000 ,  Val - 1.0000 ,  Test - 0.7950
 
 This is a case of overfitting. 
-The model architecture and other model parameterss along with the dataset and its preprocessing need to studied.
+The model architecture and other model parameters along with the dataset and its preprocessing need to studied.
 This model should not be deployed in production
 ```
 
@@ -183,4 +183,34 @@ Steps to run the scripts/notebooks as is:
       ```
       Save the changes to the file.
  
+# Deployment using AWS Lambda, AWS ECR and AWS API Gatway
+   1. Go to ```AWS Lambda folder``` in the repository and type the following commands. The `Dockerfile` in the folder will be used to create a docker image.
+      ```
+      docker build -t cervical_fracture_model .
+      docker run -it --rm -p 8080:8080 cervical_fracture_model:latest
+      ```
+   
+   2. To test if the docker container was build properly and running, go to the lambda_predict_test.py and uncomment the 1st url variable and comment the 2nd url variable         and save the file with the changes.
+      ```
+      python lambda_predict_test.py
+      ```
+  
+   3. Once it is confirmed the model is giving out the predictions from the container, go back to lambda_predict_test.py and comment the 1st url variable and uncomment the       2nd one and save the file. Also, stop the docker container.  This container will be uploaded to AWS ECR which will be then used by AWS Lambda functions to create a         AWS Lambda functions prediction service with the help as AWS API gateway. In order to achieve this, I followed the steps described on
+      ```
+      https://github.com/MuhammadAwon/ml-engineering/tree/main/09-serverless and ML Zoomcamp video recordings
+      ```
+      
+   4. The screenshot of the uploaded container being used as  AWS lambda functions prediction service is provided. And the working of the AWS Lambda functions with AWS API
+      gateway will be confirmed when the 2nd url variable in lambda_predict_test.py is used as the url for requesting the prediction service and returns a prediction after running the following command.
+      ```
+      python lambda_predict_test.py 
+      ``` 
+      Simply put, if the prediction is returned  after step 3 is completed and lambda_predict_test.py is run, it means we uploaded the container and configured it correctly. Therefore, it is providing us with the prediction service.
+      
+      Screenshot of the service on AWS Lambda Functions: 
+     ![Screenshot of the lambda function](https://user-images.githubusercontent.com/108292818/209393198-e5b82d5c-03d2-4b55-8bdf-0e038b425e5c.PNG)
 
+      
+   
+   
+   
