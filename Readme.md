@@ -183,7 +183,7 @@ Steps to run the scripts/notebooks as is:
       ```
       Save the changes to the file.
  
-# Deployment using AWS Lambda, AWS ECR and AWS API Gatway
+## Deployment using AWS Lambda, AWS ECR and AWS API Gatway
    1. Go to ```AWS Lambda folder``` in the repository and type the following commands. The `Dockerfile` in the folder will be used to create a docker image.
       ```
       docker build -t cervical_fracture_model .
