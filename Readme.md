@@ -95,7 +95,7 @@ Steps to run the scripts/notebooks as is:
 
 1. Clone the repo by running the following command:
    ```
-   git clone  
+   git clone https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1.git
    ```
 2. Open a terminal or command prompt and change directory to the folder where this project is cloned.
 
@@ -106,8 +106,8 @@ Steps to run the scripts/notebooks as is:
 
    In case, pipenv is not installed in your system, to install pipenv and to activate the virtual environment for the project, type the following commands:
    ```
-   pip install pipenv` 
-   pipenv shell` (in the project folder)
+   pip install pipenv 
+   pipenv shell (in the project folder)
    ``` 
 4.  To install the files and dependencies related to the project, run the following in the folder containing Pipfile/Pipfile.lock
     ```
@@ -117,15 +117,15 @@ Steps to run the scripts/notebooks as is:
 
     a. To train the the model and save it using train.py script, run the following command in the terminal/prompt.
        ```
-       python train.py` (To train and save the model)
+       python train.py (To train and save the model)
        ```
        
-    b. Run predict-flask.py using python in a terminal/prompt.
+    b. Run predict_flask.py using python in a terminal/prompt.
        ```
-       python predict_flask.py` (To start the prediction service)
+       python predict_flask.py (To start the prediction service)
        ```
        
-    c. Open another terminal/prompt and run predict-test.py Or run predict-test.ipynb jupyter notebook to test the prediction service.
+    c. Open another terminal/prompt and run predict_test.py.
        ```
        python predict_test.py (To test the prediction service)
        ```
