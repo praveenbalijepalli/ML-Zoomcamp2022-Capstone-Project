@@ -1,6 +1,6 @@
 import requests
 
-#url = 'http://localhost:8080/2015-03-31/functions/function/invocations' # AWS ECR Docker Endpoint/ Lambda Endpoint
+#url = 'http://localhost:8080/2015-03-31/functions/function/invocations' # AWS ECR Docker Endpoint
 
 url = "https://w6juezx0eg.execute-api.ap-south-1.amazonaws.com/test/predict"   # AWS RestAPI-Lambda Endpoint
 
