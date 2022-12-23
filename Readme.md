@@ -100,7 +100,7 @@ Steps to run the scripts/notebooks as is:
 
 1. Clone the repo by running the following command:
    ```
-   git clone https://github.com/praveenbalijepalli/mlzoomcamp-capstone.git
+   git clone https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1.git
    ```
 2. Open a terminal or command prompt and change directory to the folder where this project is cloned.
 
@@ -209,7 +209,8 @@ Steps to run the scripts/notebooks as is:
       Screenshot of the service on AWS Lambda Functions: 
      ![Screenshot of the lambda function](https://user-images.githubusercontent.com/108292818/209393198-e5b82d5c-03d2-4b55-8bdf-0e038b425e5c.PNG)
 
-      
-   
+      Prediction from the service when 2nd url variable(lamda-rest-api endpoint) was used to test the deployment and the model.  
+     ![Screenshot of the AWS lambda function working](https://user-images.githubusercontent.com/108292818/209398516-6cf1f486-c294-4629-be72-c906d4566c4b.PNG)
+
    
    
