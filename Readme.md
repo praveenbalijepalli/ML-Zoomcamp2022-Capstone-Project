@@ -41,17 +41,18 @@ Number of Epochs        : 20
 
 ## Classification Metrics of the Final Model
 ```
-Final Model             :
+Final Model             : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/cerv_fracture_model.h5
+Final TFlite Model      : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/cerv_fracture_model.tflite
 Train, Val and Test     
 Accuracy Score          : Train  -     , Val -    , Test - 
 Loss                    : Train  -     , Val -    , Test -   
 Precision               : Train  -     , Val -    , Test -
-Recall                : Train  -     , Val -    , Test -
+Recall                  : Train  -     , Val -    , Test -
 ```
 
 ## Sample Input and Output
 
-In the test.py file, replace the data variable's assignment with the following:
+In the predict_test.py file, replace the data variable with the following:
 1. Sample Input:
    ```
    data = {'url':'https://raw.githubusercontent.com/praveenbalijepalli/mlzoomcamp-capstone-1/main/sample%20images%20for%20testing/fracture.png'}
@@ -70,7 +71,7 @@ In the test.py file, replace the data variable's assignment with the following:
 
     Sample Output:
     ```
-    {'Predict Probability': '0.06067303', 'Prediction': 'fracture'}
+    {'Predict Probability': '0.7252521', 'Prediction': 'normal'}
     ```
  
 ## Tools / Libraries
@@ -83,9 +84,9 @@ Virtual Environment     : pipenv
 
 ## Scripts
 ```
-Train Script            :
-Keras to TFlite Script  :
-Predict Script          :
+Train Script            : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/train.py
+Keras to TFlite Script  : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/convert_keras_to_tflite.py
+Predict Script          : 
 Test Script             :
 ```
 
@@ -121,12 +122,12 @@ Steps to run the scripts/notebooks as is:
        
     b. Run predict-flask.py using python in a terminal/prompt.
        ```
-       python predict-flask.py` (To start the prediction service)
+       python predict_flask.py` (To start the prediction service)
        ```
        
     c. Open another terminal/prompt and run predict-test.py Or run predict-test.ipynb jupyter notebook to test the prediction service.
        ```
-       python predict-test.py (To test the prediction service)
+       python predict_test.py (To test the prediction service)
        ```
 
 
@@ -136,14 +137,14 @@ Steps to run the scripts/notebooks as is:
    
    1. Follow the steps mentioned above from 1 to 4, if you haven't already completed them.
    
-   2. To run the prediction service offered by predict-flask.py using waitress, type the following command
+   2. To run the prediction service offered by predict_flask.py using waitress, type the following command
       ```
-      waitress-serve --listen=0.0.0.0:9696 predict:app (This will keep the running the prediction service)
+      waitress-serve --listen=0.0.0.0:9696 predict_flask:app (This will keep the running the prediction service)
       ```
       
    3. Open another terminal/prompt and run test.py
       ```
-      python test.py (To test the prediction service)
+      python predict_test.py (To test the prediction service)
       ``` 
       
  ### Using Docker 
@@ -156,16 +157,9 @@ Steps to run the scripts/notebooks as is:
       docker run -it --rm -p 9696:9696 zoomcamp-midterm-project  (This will keep the running the prediction service from the docker container)
       ```
       
-   3. Open another terminal/prompt and run predict-test.py Or run predict-test.ipynb jupyter notebook to test the prediction service.
+   3. Open another terminal/prompt and run predict_test.py Or run predict-test.ipynb jupyter notebook to test the prediction service.
       ``` 
-      python test.py` (To test the prediction service)
+      python predict_test.py (To test the prediction service)
       ```
 
-Code snippet from test.py file
-
-import requests
-
-img = {"image_path": "/workspaces/mlzoomcamp_capstone_project/imgs/00001.jpg"}
-
-url = "http://localhost:4242/predict"
-print(requests.post(url, json=img).json())
+ 
