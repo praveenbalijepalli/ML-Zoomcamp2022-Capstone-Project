@@ -44,12 +44,17 @@ Number of Epochs        : 20
 Final Model             : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/cerv_fracture_model.h5
 Final TFlite Model      : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/cerv_fracture_model.tflite
 Train, Val and Test     
-Accuracy Score          : Train  -     , Val -    , Test - 
-Loss                    : Train  -     , Val -    , Test -   
-Precision               : Train  -     , Val -    , Test -
-Recall                  : Train  -     , Val -    , Test -
+Accuracy Score          : Train - 1.0000 ,  Val - 0.9105 ,  Test - 0.8600
+Loss                    : Train - 0.0024 ,  Val - 0.1695 ,  Test - 0.3144 
+Precision               : Train - 1.0000 ,  Val - 0.8482 ,  Test - 0.9138
+Recall                  : Train - 1.0000 ,  Val - 1.0000 ,  Test - 0.7950
+
+This is a case of overfitting. 
+The model architecture and other model parameterss along with the dataset and its preprocessing need to studied.
+This model should not be deployed in production
 ```
 
+ 
 ## Sample Input and Output
 
 In the predict_test.py file, replace the data variable with the following:
