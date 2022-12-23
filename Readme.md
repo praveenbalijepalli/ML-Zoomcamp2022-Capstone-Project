@@ -7,12 +7,12 @@ Architectures      : Deep CNNs, Inceptionv3, Resnet50V2, Xception
 Application        : Medical Image Classification
 ```
 
-## Problem Statement: 
+## Problem Statement 
 The fractures to cervical region usually result from high energy trauma like automobile crashes and falls. In elderly people, a fall of the charir or falling on the ground can cause a cervical fracture. Cervical fracture is the fracture of any of the seven cervical vertebrae in the neck. Since they support the head and connect it to the shoulders and the body, immediate response to an injury to it paramount as it can have serious consequences. Injury to the vertebra can lead temporary or permanent paralysis from the neck down and in some cases even leading to death. So, a physician will usually need support from radiographic studies such as MRI or CT scans to determine the extent of the injuries. This project is an endeavour to use AI to assist a physician to determine if a CT scan image shows a "fracture" in a vertbrae or if it is "normal".
 
 
 
-## Dataset Details:
+## Dataset Details
 ```
 Dataset Description: Contains images of Fractured and Normal Cervical CT scans in their respective folders in Train and Test Folders
 Dataset Name       : Spine Fracture Prediction from C.T. Dataset
@@ -24,7 +24,7 @@ Number of Images   : Training Images - 3800 (Training  - 3040 and Validation - 7
 ```
 
 
-## Parameters for Training:
+## Parameters for Training
 ```
 For Pre-trained Models:
 Model Architecture      : Input, Pre-trained base models(Inceptionv3, Resnet50V2, Xception with imagenet weights), GlobalAveragePooling2D, Dense - Output layer
@@ -49,12 +49,12 @@ Precision               : Train  -     , Val -    , Test -
 Recall                : Train  -     , Val -    , Test -
 ```
 
-## Sample Input and Output:
+## Sample Input and Output
 ```
 
 ```
  
-##Tools / Libraries:
+## Tools / Libraries
 ```
 Languages               : Python
 Tools/IDE               : Anaconda
@@ -62,7 +62,7 @@ Libraries               : Keras, TensorFlow
 Virtual Environment     : pipenv
 ```
 
-##Scripts:
+## Scripts
 ```
 Train Script            :
 Keras to TFlite Script  :
@@ -70,7 +70,7 @@ Predict Script          :
 Test Script             :
 ```
 
-##Run the Model as is: 
+##Run the Model as is  
 Steps to run the scripts/notebooks as is:
 
 1. Clone the repo by running the following command:
@@ -113,7 +113,7 @@ Steps to run the scripts/notebooks as is:
 
 ## Model as a web service 
 
-### Using Waitress: 
+### Using Waitress  
    
    1. Follow the steps mentioned above from 1 to 4, if you haven't already completed them.
    
@@ -127,7 +127,7 @@ Steps to run the scripts/notebooks as is:
       python test.py (To test the prediction service)
       ``` 
       
- ### Using Docker:
+ ### Using Docker 
  
    1. Clone the directory into you work space.
    
