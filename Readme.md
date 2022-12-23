@@ -100,7 +100,7 @@ Steps to run the scripts/notebooks as is:
 
 1. Clone the repo by running the following command:
    ```
-   git clone https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1.git
+   git clone https://github.com/praveenbalijepalli/mlzoomcamp-capstone.git
    ```
 2. Open a terminal or command prompt and change directory to the folder where this project is cloned.
 
