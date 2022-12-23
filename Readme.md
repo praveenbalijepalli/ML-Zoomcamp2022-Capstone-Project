@@ -157,8 +157,10 @@ Steps to run the scripts/notebooks as is:
    1. Clone the directory into you work space.
    
    2. Open predict_flask.py. Go to the part of the chart where libraries are imported. 
+      ```
       Uncomment:  import tflite_runtime.interpreter as tflite  and 
       Comment:    import tensorflow.lite as tflite
+      ```
       Save the changes in the file. This change is temporary. Once we build run our docker image and test our predictions and get them right, we will change it back
       
    2. Build and run the application using the commands:
@@ -174,7 +176,9 @@ Steps to run the scripts/notebooks as is:
       If the prediction services gives prediction, then it means the docker container is working.
       
    4. Open predict_flask.py. Go to the part of the chart where libraries are imported. 
-      Comment:  import tflite_runtime.interpreter as tflite  and 
-      Uncomment:    import tensorflow.lite as tflite
+      ```  
+      Comment:     import tflite_runtime.interpreter as tflite  and 
+      Uncomment:   import tensorflow.lite as tflite
+      ```
       Save the changes in the file.
  
