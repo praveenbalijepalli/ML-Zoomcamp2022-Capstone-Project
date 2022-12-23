@@ -16,7 +16,7 @@ The fractures to cervical region usually result from high energy trauma like aut
 ```
 Dataset Description: Contains images of Fractured and Normal Cervical CT scans in their respective folders in Train and Test Folders
 Dataset Name       : Spine Fracture Prediction from C.T. Dataset
-Dataset Link       : [Spine fracture prediction from C.T Dataset)(Kaggle)](https://www.kaggle.com/datasets/vuppalaadithyasairam/spine-fracture-prediction-from-xrays/code)
+Dataset Link       : https://www.kaggle.com/datasets/vuppalaadithyasairam/spine-fracture-prediction-from-xrays/code
 Dataset Size       : 311 MB 
 Number of Classes  : 2 (Fracture, Normal)
 Number of Images   : Training Images - 3800 (Training  - 3040 and Validation - 760 Images
@@ -126,18 +126,21 @@ Steps to run the scripts/notebooks as is:
       ```
       python test.py (To test the prediction service)
       ``` 
+      
  ### Using Docker:
  
    1. Clone the directory into you work space.
+   
    2. Build and run the application using the commands:
-      ``
-         docker build -t zoomcamp-midterm-project .
-         docker run -it --rm -p 9696:9696 zoomcamp-midterm-project  (This will keep the running the prediction service from the docker container)
-      ``
+      ```
+      docker build -t zoomcamp-midterm-project .
+      docker run -it --rm -p 9696:9696 zoomcamp-midterm-project  (This will keep the running the prediction service from the docker container)
+      ```
+      
    3. Open another terminal/prompt and run predict-test.py Or run predict-test.ipynb jupyter notebook to test the prediction service.
-       
-     `python test.py` (To test the prediction service)
- 
+      ``` 
+      python test.py` (To test the prediction service)
+      ```
 
 For instance the test.py file.
 Code snippet
