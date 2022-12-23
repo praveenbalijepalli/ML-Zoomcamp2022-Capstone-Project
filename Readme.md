@@ -200,12 +200,11 @@ Steps to run the scripts/notebooks as is:
       https://github.com/MuhammadAwon/ml-engineering/tree/main/09-serverless and ML Zoomcamp video recordings
       ```
       
-   4. The screenshot of the uploaded container being used as  AWS lambda functions prediction service is provided. And the working of the AWS Lambda functions with AWS API
-      gateway will be confirmed when the 2nd url variable in lambda_predict_test.py is used as the url for requesting the prediction service and returns a prediction after running the following command.
+   4. The working of the AWS Lambda functions with AWS API gateway will be confirmed when the 2nd url variable in lambda_predict_test.py is used as the url for requesting the prediction service and returns a prediction after running the following command.
       ```
       python lambda_predict_test.py 
       ``` 
-      Simply put, if the prediction is returned  after step 3 is completed and lambda_predict_test.py is run, it means we uploaded the container and configured it correctly. Therefore, it is providing us with the prediction service.
+      Simply put, if the prediction is returned  after step 3 is completed and lambda_predict_test.py is run, it means we uploaded the container and configured it to work with the other AWS services(AWS Lambda Functions and AWS API Gateway) correctly. Therefore, it is providing us with the prediction service.
       
       Screenshot of the service on AWS Lambda Functions: 
      ![Screenshot of the lambda function](https://user-images.githubusercontent.com/108292818/209393198-e5b82d5c-03d2-4b55-8bdf-0e038b425e5c.PNG)
