@@ -50,9 +50,28 @@ Recall                : Train  -     , Val -    , Test -
 ```
 
 ## Sample Input and Output
-```
 
-```
+In the test.py file, replace the data variable's assignment with the following:
+1. Sample Input:
+   ```
+   data = {'url':'https://raw.githubusercontent.com/praveenbalijepalli/mlzoomcamp-capstone-1/main/sample%20images%20for%20testing/fracture.png'}
+   ```
+
+   Sample Output:
+   ```
+   {'Predict Probability': '0.06067303', 'Prediction': 'fracture'}
+   ```
+   
+   
+ 2. Sample Input:
+    ```
+    data = {'url':'https://raw.githubusercontent.com/praveenbalijepalli/mlzoomcamp-capstone-1/main/sample%20images%20for%20testing/normal.png'}
+    ```
+
+    Sample Output:
+    ```
+    {'Predict Probability': '0.06067303', 'Prediction': 'fracture'}
+    ```
  
 ## Tools / Libraries
 ```
@@ -70,7 +89,7 @@ Predict Script          :
 Test Script             :
 ```
 
-##Run the Model as is  
+## Run the Model as is  
 Steps to run the scripts/notebooks as is:
 
 1. Clone the repo by running the following command:
@@ -142,8 +161,7 @@ Steps to run the scripts/notebooks as is:
       python test.py` (To test the prediction service)
       ```
 
-For instance the test.py file.
-Code snippet
+Code snippet from test.py file
 
 import requests
 
