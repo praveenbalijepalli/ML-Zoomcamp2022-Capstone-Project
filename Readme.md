@@ -161,7 +161,8 @@ Steps to run the scripts/notebooks as is:
       Uncomment:  import tflite_runtime.interpreter as tflite  and 
       Comment:    import tensorflow.lite as tflite
       ```
-      Save the changes in the file. This change is temporary. Once we build run our docker image and test our predictions and get them right, we will change it back
+      Save the changes to the file. This change is temporary. 
+      Once we build run our docker image and test our predictions and get them right, we will change it back
       
    2. Build and run the application using the commands:
       ```
@@ -180,5 +181,6 @@ Steps to run the scripts/notebooks as is:
       Comment:     import tflite_runtime.interpreter as tflite  and 
       Uncomment:   import tensorflow.lite as tflite
       ```
-      Save the changes in the file.
+      Save the changes to the file.
  
+
