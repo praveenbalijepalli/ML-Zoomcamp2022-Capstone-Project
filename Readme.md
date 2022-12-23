@@ -86,8 +86,8 @@ Virtual Environment     : pipenv
 ```
 Train Script            : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/train.py
 Keras to TFlite Script  : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/convert_keras_to_tflite.py
-Predict Script          : 
-Test Script             :
+Predict Script          : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/predict_flask.py
+Predict Test Script     : https://github.com/praveenbalijepalli/mlzoomcamp-capstone-1/blob/main/predict_test.py
 ```
 
 ## Run the Model as is  
@@ -142,7 +142,7 @@ Steps to run the scripts/notebooks as is:
       waitress-serve --listen=0.0.0.0:9696 predict_flask:app (This will keep the running the prediction service)
       ```
       
-   3. Open another terminal/prompt and run test.py
+   3. Open another terminal/prompt and run predict_test.py
       ```
       python predict_test.py (To test the prediction service)
       ``` 
@@ -153,11 +153,11 @@ Steps to run the scripts/notebooks as is:
    
    2. Build and run the application using the commands:
       ```
-      docker build -t zoomcamp-midterm-project .
-      docker run -it --rm -p 9696:9696 zoomcamp-midterm-project  (This will keep the running the prediction service from the docker container)
+      docker build -t zoomcamp-capstone-1 .
+      docker run -it --rm -p 9696:9696 zoomcamp-capstone-1  (This will keep the running the prediction service from the docker container)
       ```
       
-   3. Open another terminal/prompt and run predict_test.py Or run predict-test.ipynb jupyter notebook to test the prediction service.
+   3. Open another terminal/prompt and run predict_test.py  
       ``` 
       python predict_test.py (To test the prediction service)
       ```
